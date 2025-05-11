@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Samuel Edorh | Certificate Page</title>
+    <meta name="author" content="Samuel Gbenga Edorh" />
+    <meta name="description" content="Web and Computer Programming Certificate" />
+
+    <!-- Normalize & Google Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+
+    <!-- Your Styles -->
+    <link rel="stylesheet" href="styles/index.css" />
+    <script src="scripts/index.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/profile.jpg" alt="Profile Picture" />
+        <span class="name-title">Samuel G. Edorh</span>
+        <button id="menuToggle" aria-label="Menu">&#9776;</button>
+    </header>
+
+    <nav id="mainNav">
+        <a href="index.html" class="active">Home</a>
+        <a href="#">Chamber</a>
+        <a href="#">Final</a>
+        <a href="https://github.com/dashboard">GitHub Profile</a>
+        <a href="https://linkedin.com/in/samuel-edorh">LinkedIn</a>
+    </nav>
+
+    <main>
+        <h1>Home</h1>
+
+        <section class="grid">
+            <div class="card">
+                <h2>Course Work</h2>
+                <ul>
+                    <li>HTML + CSS</li>
+                    <li>Responsive Design</li>
+                    <li>JavaScript DOM</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h2>Lagos, Nigeria</h2>
+                <img src="images/Nigeria.jpg" alt="Lagos, Nigeria" />
+                <p>Street view from Lagos</p>
+            </div>
+        </section>
+
+        <section class="certificate">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div class="filters">
+                <button data-filter="all">All</button>
+                <button data-filter="CSE">CSE</button>
+                <button data-filter="WDD">WDD</button>
+            </div>
+            <div id="courses"></div>
+            <p class="credits">Total Credits: <span id="totalCredits">0</span></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© <span id="copyright"></span> 💫Samuel Edorh💫 Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
